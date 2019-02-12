@@ -9,15 +9,10 @@ class NegociacaoController {
     event.preventDefault()
 
     let data = new Date(
-      ...this._inputData.value.split('-').map((item, index) => {
-        if (index == 1) {
-          return item - 1
-        }
-        return item
-      })
+      ...this._inputData.value
+        .split('-')
+        .map((item, index) => item - (index % 2))
     )
-
-    console.log(data)
 
     let negociacao = new Negociacao(
       data,
