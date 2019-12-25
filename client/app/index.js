@@ -1,8 +1,4 @@
-var campos = [
-  document.querySelector('#data'),
-  document.querySelector('#quantidade'),
-  document.querySelector('#valor')
-]
+var campos = [document.querySelector('#data'), document.querySelector('#quantidade'), document.querySelector('#valor')]
 
 var tbody = document.querySelector('table tbody')
 
